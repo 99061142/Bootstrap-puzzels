@@ -9,98 +9,105 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 </head>
-    <body>
-        <div>
-            <div>
+    <body class='mt-1 bg-dark'>
+        <div class='w-75 m-auto'>
+            <div class="navbar bg-secondary">          
+                <i class="fas fa-bars text-white h3" data-toggle="collapse" data-target="#navbar_links"></i>
                 <div>
-                    <h1>Bootstrap Puzzle 2</h1>
+                    <h1 class='navbar-brand text-white'>Bootstrap Puzzle 2</h1>
                 </div>
-                <div>
+                <div class="collapse navbar-collapse" id='navbar_links'>
                     <a></a>
-                    <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="puzzle1.html">Puzzle 1</a></li>
-                        <li><a href="puzzle2.html">Puzzle 2</a></li>
-                        <li><a href="puzzle3.html">Puzzle 3</a></li>
-                        <li><a href="bonus.html">Bonus</a></li>
+                    <ul class='navbar-nav dropdown-menu  bg-white ml-3'>
+                        <li class="ml-4 nav-item"><a class="nav-link text-dark" href="index.html">Home</a></li>
+                        <li class="ml-4 nav-item"><a class="nav-link text-dark" href="puzzle1.html">Puzzle 1</a></li>
+                        <li class="ml-4 nav-item"><a class="nav-link text-dark" href="puzzle2.html">Puzzle 2</a></li>
+                        <li class="ml-4 nav-item"><a class="nav-link text-dark" href="puzzle3.html">Puzzle 3</a></li>
+                        <li class="ml-4 nav-item"><a class="nav-link text-dark" href="bonus.html">Bonus</a></li>
                     </ul>
                 </div>
             </div>
 
 
-
-            <div>
-                <div>
-                    <a href="img/img1.jpg" target="_blank">
-                        <img src="img/img1.jpg">
-                        <span>Bekijk Boom 1</span>
+            <div class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner">
+                    <a class="carousel-item active" href="img/img1.jpg" target="_blank">
+                        <img class="d-block w-100" src="img/img1.jpg">
+                        <span class="h4 carousel-caption">Bekijk Boom 1</span>
                     </a>
-                    <a href="img/img2.jpg" target="_blank">
-                        <img src="img/img2.jpg">
-                        <span>Bekijk Boom 2</span>
+                    <a class="carousel-item" href="img/img2.jpg" target="_blank">
+                        <img class="d-block w-100" src="img/img2.jpg">
+                        <span class="h4 carousel-caption">Bekijk Boom 2</span>
                     </a>
-                    <a href="img/img3.jpg" target="_blank">
-                        <img src="img/img3.jpg">
-                        <span>Bekijk Boom 3</span>
+                    <a class="carousel-item" href="img/img3.jpg" target="_blank">
+                        <img class="d-block w-100" src="img/img3.jpg">
+                        <span class="h4 carousel-caption">Bekijk Boom 3</span>
                     </a>
-                    <a href="img/img4.jpg" target="_blank">
-                        <img src="img/img4.jpg">
-                        <span>Bekijk Boom 4</span>
+                    <a class="carousel-item" href="img/img4.jpg" target="_blank">
+                        <img class="d-block w-100" src="img/img4.jpg">
+                        <span class="h4 carousel-caption">Bekijk Boom 4</span>
                     </a>
-                    <a href="img/img5.jpg" target="_blank">
-                        <img src="img/img5.jpg">
-                        <span>Bekijk Boom 5</span>
+                    <a class="carousel-item" href="img/img5.jpg" target="_blank">
+                        <img class="d-block w-100" src="img/img5.jpg">
+                        <span class="h4 carousel-caption">Bekijk Boom 5</span>
                     </a>
                 </div>
             </div>
 
-            <div class='container row'>
-                <div class='col-5'>
-                    <div class='col-12'>
-                        <img src="img/item1.jpg">
-                        <h2>Etiam hendrerit vel sem ac accumsan</h2>
-                        <p id="item1text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nunc lectus, feugiat id ipsum sed, sollicitudin malesuada justo. Nam congue commodo quam, vitae gravida mi. Aliquam erat volutpat. Suspendisse semper, lectus eu accumsan feugiat, nunc nibh euismod turpis, ut suscipit massa nibh at eros. Vivamus vel orci sed libero accumsan egestas. </p>
-                        <p><a href="#item1text">Lees meer &hellip;</a></p>
+
+            <div class='container m-0 row bg-secondary'>
+                <div class='col-6'>
+                    <div class='card bg-white mb-4 mt-1 dropup'>
+                        <img class="w-25 h-25 card-img-top ml-2" src="img/item1.jpg">
+                        <h2 class="w-75 bg-info text-white text-right pr-4 mr-2">Etiam hendrerit vel sem ac accumsan</h2>
+                        <p class="card-text dropdown-menu px-4" id="item1text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nunc lectus, feugiat id ipsum sed, sollicitudin malesuada justo. Nam congue commodo quam, vitae gravida mi. Aliquam erat volutpat. Suspendisse semper, lectus eu accumsan feugiat, nunc nibh euismod turpis, ut suscipit massa nibh at eros. Vivamus vel orci sed libero accumsan egestas. </p>
+                        <p class="mb-2 mr-2" data-toggle="dropdown"><a class='btn btn-info float-right text-white' href="#item1text">Lees meer &hellip;</a></p>
                     </div>
-                    <div class='col-12'>
-                        <img src="img/item2.jpg">
-                        <h2>Etiam hendrerit vel sem ac accumsan</h2>
-                        <p id="item2text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nunc lectus, feugiat id ipsum sed, sollicitudin malesuada justo. Nam congue commodo quam, vitae gravida mi. Aliquam erat volutpat. Suspendisse semper, lectus eu accumsan feugiat, nunc nibh euismod turpis, ut suscipit massa nibh at eros. Vivamus vel orci sed libero accumsan egestas. </p>
-                        <p><a href="#item2text">Lees meer &hellip;</a></p>
+
+                    <div class='card bg-white mb-4 mt-1 dropup'>
+                        <img class="w-25 h-25 card-img-top ml-2" src="img/item2.jpg">
+                        <h2 class="w-75 bg-info text-white text-right pr-4 mr-2">Etiam hendrerit vel sem ac accumsan</h2>
+                        <p class="card-text dropdown-menu px-4" id="item2text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nunc lectus, feugiat id ipsum sed, sollicitudin malesuada justo. Nam congue commodo quam, vitae gravida mi. Aliquam erat volutpat. Suspendisse semper, lectus eu accumsan feugiat, nunc nibh euismod turpis, ut suscipit massa nibh at eros. Vivamus vel orci sed libero accumsan egestas. </p>
+                        <p class="mb-2 mr-2" data-toggle="dropdown"><a class='btn btn-info float-right text-white' href="#item2text">Lees meer &hellip;</a></p>
                     </div>
-                    <div class='col-12'>
-                        <img src="img/item3.jpg">
-                        <h2>Etiam hendrerit vel sem ac accumsan</h2>
-                        <p id="item3text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nunc lectus, feugiat id ipsum sed, sollicitudin malesuada justo. Nam congue commodo quam, vitae gravida mi. Aliquam erat volutpat. Suspendisse semper, lectus eu accumsan feugiat, nunc nibh euismod turpis, ut suscipit massa nibh at eros. Vivamus vel orci sed libero accumsan egestas. </p>
-                        <p><a href="#item3text">Lees meer &hellip;</a></p>
+
+                    <div class='card bg-white mb-4 mt-1 dropup'>
+                        <img class="w-25 h-25 card-img-top ml-2" src="img/item3.jpg">
+                        <h2 class="w-75 bg-info text-white text-right pr-4 mr-2">Etiam hendrerit vel sem ac accumsan</h2>
+                        <p class="card-text dropdown-menu px-4" id="item3text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nunc lectus, feugiat id ipsum sed, sollicitudin malesuada justo. Nam congue commodo quam, vitae gravida mi. Aliquam erat volutpat. Suspendisse semper, lectus eu accumsan feugiat, nunc nibh euismod turpis, ut suscipit massa nibh at eros. Vivamus vel orci sed libero accumsan egestas. </p>
+                        <p class="mb-2 mr-2" data-toggle="dropdown"><a class='btn btn-info float-right text-white' href="#item3text">Lees meer &hellip;</a></p>
                     </div>
                 </div>
 
-                <div class='col-5'>
-                    <div class='col-12'>
-                        <img src="img/item4.jpg">
-                        <h2>Etiam hendrerit vel sem ac accumsan</h2>
-                        <p id="item4text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nunc lectus, feugiat id ipsum sed, sollicitudin malesuada justo. Nam congue commodo quam, vitae gravida mi. Aliquam erat volutpat. Suspendisse semper, lectus eu accumsan feugiat, nunc nibh euismod turpis, ut suscipit massa nibh at eros. Vivamus vel orci sed libero accumsan egestas. </p>
-                        <p><a href="#item4text">Lees meer &hellip;</a></p>
+
+                <div class='col-6'>
+                    <div class='card bg-white mb-4 mt-1 dropup'>
+                        <img class="w-25 h-25 card-img-top ml-2" src="img/item4.jpg">
+                        <h2 class="w-75 bg-info text-white text-right pr-4 mr-2">Etiam hendrerit vel sem ac accumsan</h2>
+                        <p class="card-text dropdown-menu px-4" id="item4text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nunc lectus, feugiat id ipsum sed, sollicitudin malesuada justo. Nam congue commodo quam, vitae gravida mi. Aliquam erat volutpat. Suspendisse semper, lectus eu accumsan feugiat, nunc nibh euismod turpis, ut suscipit massa nibh at eros. Vivamus vel orci sed libero accumsan egestas. </p>
+                        <p class="mb-2 mr-2" data-toggle="dropdown"><a class='btn btn-info float-right text-white' href="#item4text">Lees meer &hellip;</a></p>
                     </div>
-                    <div class='col-12'>
-                        <img src="img/item5.jpg">
-                        <h2>Etiam hendrerit vel sem ac accumsan</h2>
-                        <p id="item5text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nunc lectus, feugiat id ipsum sed, sollicitudin malesuada justo. Nam congue commodo quam, vitae gravida mi. Aliquam erat volutpat. Suspendisse semper, lectus eu accumsan feugiat, nunc nibh euismod turpis, ut suscipit massa nibh at eros. Vivamus vel orci sed libero accumsan egestas. </p>
-                        <p><a href="#item5text">Lees meer &hellip;</a></p>
+
+                    <div class='card bg-white mb-4 mt-1 dropup'>
+                        <img class="w-25 h-25 card-img-top ml-2" src="img/item5.jpg">
+                        <h2 class="w-75 bg-info text-white text-right pr-4 mr-2">Etiam hendrerit vel sem ac accumsan</h2>
+                        <p class="card-text dropdown-menu px-4" id="item5text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nunc lectus, feugiat id ipsum sed, sollicitudin malesuada justo. Nam congue commodo quam, vitae gravida mi. Aliquam erat volutpat. Suspendisse semper, lectus eu accumsan feugiat, nunc nibh euismod turpis, ut suscipit massa nibh at eros. Vivamus vel orci sed libero accumsan egestas. </p>
+                        <p class="mb-2 mr-2" data-toggle="dropdown"><a class='btn btn-info float-right text-white' href="#item5text">Lees meer &hellip;</a></p>
                     </div>
-                    <div class='col-12'>
-                        <img src="img/item6.jpg">
-                        <h2>Etiam hendrerit vel sem ac accumsan</h2>
-                        <p id="item6text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nunc lectus, feugiat id ipsum sed, sollicitudin malesuada justo. Nam congue commodo quam, vitae gravida mi. Aliquam erat volutpat. Suspendisse semper, lectus eu accumsan feugiat, nunc nibh euismod turpis, ut suscipit massa nibh at eros. Vivamus vel orci sed libero accumsan egestas. </p>
-                        <p><a href="#item6text">Lees meer &hellip;</a></p>
+
+                    <div class='card bg-white mb-4 mt-1 dropup'>
+                        <img class="w-25 h-25 card-img-top ml-2" src="img/item6.jpg">
+                        <h2 class="w-75 bg-info text-white text-right pr-4 mr-2">Etiam hendrerit vel sem ac accumsan</h2>
+                        <p class="card-text dropdown-menu px-4" id="item6text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nunc lectus, feugiat id ipsum sed, sollicitudin malesuada justo. Nam congue commodo quam, vitae gravida mi. Aliquam erat volutpat. Suspendisse semper, lectus eu accumsan feugiat, nunc nibh euismod turpis, ut suscipit massa nibh at eros. Vivamus vel orci sed libero accumsan egestas. </p>
+                        <p class="mb-2 mr-2" data-toggle="dropdown"><a class='btn btn-info float-right text-white' href="#item6text">Lees meer &hellip;</a></p>
                     </div>
                 </div>
             </div>
 
-            <div>
+
+            <div class='float-right mr-4'>
                 <div>
-                    <span>Created with:</span>
+                    <span class='d-none'>Created with:</span>
                     <a href="https://getbootstrap.com/" target="_blank"><img src="img/logo-bootstrap.png"></a>
                     <a href="https://fontawesome.com/" target="_blank"><img src="img/logo-fontawsome.png"></a>
                     <a href="https://w3schools.com/" target="_blank"><img src="img/logo-w3schools.png"></a>
