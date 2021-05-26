@@ -11,19 +11,18 @@
 </head>
     <body class='mt-1 bg-dark'>
         <div class='w-75 m-auto'>
-            <div class="navbar bg-secondary">          
-                <i class="fas fa-bars text-white h3" data-toggle="collapse" data-target="#navbar_links"></i>
+            <div class="navbar bg-secondary d-flex flex-row-reverse">          
                 <div>
-                    <h1 class='navbar-brand text-white'>Bootstrap Puzzle 2</h1>
+                    <h1 class='h2 text-white'>Bootstrap Puzzle 2</h1>
                 </div>
-                <div class="collapse navbar-collapse" id='navbar_links'>
-                    <a></a>
-                    <ul class='navbar-nav dropdown-menu  bg-white ml-3'>
-                        <li class="ml-4 nav-item"><a class="nav-link text-dark" href="index.html">Home</a></li>
-                        <li class="ml-4 nav-item"><a class="nav-link text-dark" href="puzzle1.html">Puzzle 1</a></li>
-                        <li class="ml-4 nav-item"><a class="nav-link text-dark" href="puzzle2.html">Puzzle 2</a></li>
-                        <li class="ml-4 nav-item"><a class="nav-link text-dark" href="puzzle3.html">Puzzle 3</a></li>
-                        <li class="ml-4 nav-item"><a class="nav-link text-dark" href="bonus.html">Bonus</a></li>
+                <div>
+                    <a class="fas fa-bars text-white h3" data-toggle="collapse" data-target="#navbar_links"></a>
+                    <ul class='dropdown-menu bg-white ml-3 mt-0 collapse navbar-collapse' id='navbar_links'>
+                        <li class="pl-4 nav-item"><a class="nav-link text-dark" href="index.html">Home</a></li>
+                        <li class="pl-4 nav-item"><a class="nav-link text-dark" href="puzzle1.html">Puzzle 1</a></li>
+                        <li class="pl-4 nav-item bg-primary"><a class="nav-link text-dark" href="puzzle2.html">Puzzle 2</a></li>
+                        <li class="pl-4 nav-item"><a class="nav-link text-dark" href="puzzle3.html">Puzzle 3</a></li>
+                        <li class="pl-4 nav-item"><a class="nav-link text-dark" href="bonus.html">Bonus</a></li>
                     </ul>
                 </div>
             </div>
@@ -55,58 +54,58 @@
             </div>
 
 
-            <div class='container-fluid m-0 row bg-secondary py-2'>
-                <div class='col-6 row mr-4'>
-                    <div class='card bg-white'>
-                        <img style="height: 80px; width: 25%;" class="card-img-top ml-2 float-left" src="img/item1.jpg">
-                        <h2 style="height: 80px; width: 75%;" class="bg-info text-white pr-3 text-right m-0">Etiam hendrerit vel sem ac accumsan</h2>
-                        <p class="collapse multi-collapse" id="tree1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nunc lectus, feugiat id ipsum sed, sollicitudin malesuada justo. Nam congue commodo quam, vitae gravida mi. Aliquam erat volutpat. Suspendisse semper, lectus eu accumsan feugiat, nunc nibh euismod turpis, ut suscipit massa nibh at eros. Vivamus vel orci sed libero accumsan egestas. </p>
-                        <p class="mb-2 mr-2"><a class="btn btn-primary float-right bg-info" data-toggle="collapse" href="#tree1" role="button" aria-expanded="false" aria-controls="tree1">Lees meer &hellip;</a></p>
+            <div class='container row m-0 bg-secondary px-4 py-2'>
+                <div class='col mr-5'>
+                    <div class='bg-white row p-2'>
+                        <img class="col-3 p-0" src="img/item1.jpg">
+                        <h2 class="bg-info text-white text-right col-9 m-0 pl-0">Etiam hendrerit vel sem ac accumsan</h2>
+                        <p class="collapse multi-collapse col-12" id="tree1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nunc lectus, feugiat id ipsum sed, sollicitudin malesuada justo. Nam congue commodo quam, vitae gravida mi. Aliquam erat volutpat. Suspendisse semper, lectus eu accumsan feugiat, nunc nibh euismod turpis, ut suscipit massa nibh at eros. Vivamus vel orci sed libero accumsan egestas. </p>
+                        <p class="col-12 my-2 p-0"><a class="btn btn-primary bg-info float-right" data-toggle="collapse" href="#tree1" role="button" aria-expanded="false" aria-controls="tree1">Lees meer &hellip;</a></p>
                     </div>
 
 
-                    <div class='card bg-white my-3'>
-                        <img style="height: 80px; width: 25%;" class="card-img-top ml-2 float-left" src="img/item2.jpg">
-                        <h2 style="height: 80px; width: 75%;" class="bg-info text-white pr-3 text-right m-0">Etiam hendrerit vel sem ac accumsan</h2>
-                        <p class="collapse multi-collapse" id="tree2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nunc lectus, feugiat id ipsum sed, sollicitudin malesuada justo. Nam congue commodo quam, vitae gravida mi. Aliquam erat volutpat. Suspendisse semper, lectus eu accumsan feugiat, nunc nibh euismod turpis, ut suscipit massa nibh at eros. Vivamus vel orci sed libero accumsan egestas. </p>
-                        <p class="mb-2 mr-2"><a class="btn btn-primary float-right bg-info" data-toggle="collapse" href="#tree2" role="button" aria-expanded="false" aria-controls="tree2">Lees meer &hellip;</a></p>
+                    <div class='bg-white row p-2 my-3'>
+                        <img class="col-3 p-0" src="img/item2.jpg">
+                        <h2 class="bg-info text-white text-right col-9 m-0 pl-0">Etiam hendrerit vel sem ac accumsan</h2>
+                        <p class="collapse multi-collapse col-12" id="tree2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nunc lectus, feugiat id ipsum sed, sollicitudin malesuada justo. Nam congue commodo quam, vitae gravida mi. Aliquam erat volutpat. Suspendisse semper, lectus eu accumsan feugiat, nunc nibh euismod turpis, ut suscipit massa nibh at eros. Vivamus vel orci sed libero accumsan egestas. </p>
+                        <p class="col-12 my-2 p-0"><a class="btn btn-primary bg-info float-right" data-toggle="collapse" href="#tree2" role="button" aria-expanded="false" aria-controls="tree2">Lees meer &hellip;</a></p>
                     </div>
 
-                    <div class='card bg-white'>
-                        <img style="height: 80px; width: 25%;" class="card-img-top ml-2 float-left" src="img/item3.jpg">
-                        <h2 style="height: 80px; width: 75%;" class="bg-info text-white pr-3 text-right m-0">Etiam hendrerit vel sem ac accumsan</h2>
-                        <p class="collapse multi-collapse" id="tree3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nunc lectus, feugiat id ipsum sed, sollicitudin malesuada justo. Nam congue commodo quam, vitae gravida mi. Aliquam erat volutpat. Suspendisse semper, lectus eu accumsan feugiat, nunc nibh euismod turpis, ut suscipit massa nibh at eros. Vivamus vel orci sed libero accumsan egestas. </p>
-                        <p class="mb-2 mr-2"><a class="btn btn-primary float-right bg-info" data-toggle="collapse" href="#tree3" role="button" aria-expanded="false" aria-controls="tree3">Lees meer &hellip;</a></p>
+                    <div class='bg-white row p-2'>
+                        <img class="col-3 p-0" src="img/item3.jpg">
+                        <h2 class="bg-info text-white text-right col-9 m-0 pl-0">Etiam hendrerit vel sem ac accumsan</h2>
+                        <p class="collapse multi-collapse col-12" id="tree3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nunc lectus, feugiat id ipsum sed, sollicitudin malesuada justo. Nam congue commodo quam, vitae gravida mi. Aliquam erat volutpat. Suspendisse semper, lectus eu accumsan feugiat, nunc nibh euismod turpis, ut suscipit massa nibh at eros. Vivamus vel orci sed libero accumsan egestas. </p>
+                        <p class="col-12 my-2 p-0"><a class="btn btn-primary bg-info float-right" data-toggle="collapse" href="#tree3" role="button" aria-expanded="false" aria-controls="tree3">Lees meer &hellip;</a></p>
                     </div>
                 </div>
 
 
-                <div class='col-6 row'>
-                    <div class='card bg-white'>
-                        <img style="height: 80px; width: 25%;" class="card-img-top ml-2 float-left" src="img/item4.jpg">
-                        <h2 style="height: 80px; width: 75%;" class="bg-info text-white pr-3 text-right m-0">Etiam hendrerit vel sem ac accumsan</h2>
-                        <p class="collapse multi-collapse" id="tree4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nunc lectus, feugiat id ipsum sed, sollicitudin malesuada justo. Nam congue commodo quam, vitae gravida mi. Aliquam erat volutpat. Suspendisse semper, lectus eu accumsan feugiat, nunc nibh euismod turpis, ut suscipit massa nibh at eros. Vivamus vel orci sed libero accumsan egestas. </p>
-                        <p class="mb-2 mr-2"><a class="btn btn-primary float-right bg-info" data-toggle="collapse" href="#tree4" role="button" aria-expanded="false" aria-controls="tree4">Lees meer &hellip;</a></p>
+                <div class='col'>
+                    <div class='bg-white row p-2'>
+                        <img class="col-3 p-0" src="img/item4.jpg">
+                        <h2 class="bg-info text-white text-right col-9 m-0 pl-0">Etiam hendrerit vel sem ac accumsan</h2>
+                        <p class="collapse multi-collapse col-12" id="tree4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nunc lectus, feugiat id ipsum sed, sollicitudin malesuada justo. Nam congue commodo quam, vitae gravida mi. Aliquam erat volutpat. Suspendisse semper, lectus eu accumsan feugiat, nunc nibh euismod turpis, ut suscipit massa nibh at eros. Vivamus vel orci sed libero accumsan egestas. </p>
+                        <p class="col-12 my-2 p-0"><a class="btn btn-primary bg-info float-right" data-toggle="collapse" href="#tree4" role="button" aria-expanded="false" aria-controls="tree4">Lees meer &hellip;</a></p>
                     </div>
 
-                    <div class='card bg-white my-3'>
-                        <img style="height: 80px; width: 25%;" class="card-img-top ml-2 float-left" src="img/item5.jpg">
-                        <h2 style="height: 80px; width: 75%;" class="bg-info text-white pr-3 text-right m-0">Etiam hendrerit vel sem ac accumsan</h2>
-                        <p class="collapse multi-collapse" id="tree5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nunc lectus, feugiat id ipsum sed, sollicitudin malesuada justo. Nam congue commodo quam, vitae gravida mi. Aliquam erat volutpat. Suspendisse semper, lectus eu accumsan feugiat, nunc nibh euismod turpis, ut suscipit massa nibh at eros. Vivamus vel orci sed libero accumsan egestas. </p>
-                        <p class="mb-2 mr-2"><a class="btn btn-primary float-right bg-info" data-toggle="collapse" href="#tree5" role="button" aria-expanded="false" aria-controls="tree5">Lees meer &hellip;</a></p>
+                    <div class='bg-white row p-2 my-3'>
+                        <img class="col-3 p-0" src="img/item1.jpg">
+                        <h2 class="bg-info text-white text-right col-9 m-0 pl-0">Etiam hendrerit vel sem ac accumsan</h2>
+                        <p class="collapse multi-collapse col-12" id="tree5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nunc lectus, feugiat id ipsum sed, sollicitudin malesuada justo. Nam congue commodo quam, vitae gravida mi. Aliquam erat volutpat. Suspendisse semper, lectus eu accumsan feugiat, nunc nibh euismod turpis, ut suscipit massa nibh at eros. Vivamus vel orci sed libero accumsan egestas. </p>
+                        <p class="col-12 my-2 p-0"><a class="btn btn-primary bg-info float-right" data-toggle="collapse" href="#tree5" role="button" aria-expanded="false" aria-controls="tree5">Lees meer &hellip;</a></p>
                     </div>
 
-                    <div class='card bg-white'>
-                        <img style="height: 80px; width: 25%;" class="card-img-top ml-2 float-left" src="img/item6.jpg">
-                        <h2 style="height: 80px; width: 75%;" class="bg-info text-white pr-3 text-right m-0">Etiam hendrerit vel sem ac accumsan</h2>
-                        <p class="collapse multi-collapse" id="tree6">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nunc lectus, feugiat id ipsum sed, sollicitudin malesuada justo. Nam congue commodo quam, vitae gravida mi. Aliquam erat volutpat. Suspendisse semper, lectus eu accumsan feugiat, nunc nibh euismod turpis, ut suscipit massa nibh at eros. Vivamus vel orci sed libero accumsan egestas. </p>
-                        <p class="mb-2 mr-2"><a class="btn btn-primary float-right bg-info" data-toggle="collapse" href="#tree6" role="button" aria-expanded="false" aria-controls="tree6">Lees meer &hellip;</a></p>
+                    <div class='bg-white row p-2'>
+                        <img class="col-3 p-0" src="img/item1.jpg">
+                        <h2 class="bg-info text-white text-right col-9 m-0 pl-0">Etiam hendrerit vel sem ac accumsan</h2>
+                        <p class="collapse multi-collapse col-12" id="tree6">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nunc lectus, feugiat id ipsum sed, sollicitudin malesuada justo. Nam congue commodo quam, vitae gravida mi. Aliquam erat volutpat. Suspendisse semper, lectus eu accumsan feugiat, nunc nibh euismod turpis, ut suscipit massa nibh at eros. Vivamus vel orci sed libero accumsan egestas. </p>
+                        <p class="col-12 my-2 p-0"><a class="btn btn-primary bg-info float-right" data-toggle="collapse" href="#tree6" role="button" aria-expanded="false" aria-controls="tree6">Lees meer &hellip;</a></p>
                     </div>
                 </div>
             </div>
 
 
-            <div class='float-right mr-4'>
+            <div class='float-right mr-3 my-3'>
                 <div>
                     <span class='d-none'>Created with:</span>
                     <a href="https://getbootstrap.com/" target="_blank"><img src="img/logo-bootstrap.png"></a>
